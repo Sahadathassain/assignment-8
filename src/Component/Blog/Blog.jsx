@@ -1,4 +1,6 @@
 import React from 'react';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBookmark } from "@fortawesome/free-solid-svg-icons";
 
 const Blog = ({blog,handleReadTime}) => {
 
@@ -6,7 +8,7 @@ const Blog = ({blog,handleReadTime}) => {
   return (
     <>
      <div className="bg-yellow-200 text-black m-6 shadow-xl rounded-2xl">
-        <img className="h-ful w-screen" src={images} alt="images" />
+        <img className="h-ful w-screen rounded-xl" src={images} alt="images" />
         <div className="flex justify-between m-6 ">
           <div className="flex">
             <img className="w-16 h-16 rounded-full" src={author_image} alt="" />
@@ -15,12 +17,14 @@ const Blog = ({blog,handleReadTime}) => {
                 {author_name}
               </h2>
               <p className="text-sm">{publish_date}</p>
+
             </div>
           </div>
           <div className="flex gap-4 mt-4">
             <p>{read_time} min read</p>
+            
             <p className="cursor-pointer">
-             
+            <FontAwesomeIcon className='' icon={faBookmark} />
             </p>
           </div>
         </div>
