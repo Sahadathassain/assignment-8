@@ -5,7 +5,7 @@ const Header = () => {
         <div>
             <div className="flex p-4 justify-between bg-cyan-300 text-black">
                 <button className="font-extrabold  text-sm md:text-3xl">
-                    Programming Awareness
+                    Programming Awareness 
                 </button>
                 <div className="flex font-semibold text-sm md:text-lg gap-4">
                     <a href="/tech">Language</a>
