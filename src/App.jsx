@@ -4,6 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import Header from './Component/Header/Header'
 import Main from './Component/Main/Main'
+import Question from './Component/Question/Question'
 
 
 
@@ -14,6 +15,7 @@ function App() {
     <div className="App ">
      <Header></Header>
     <Main></Main>
+    <Question></Question>
      
     </div>
   )
