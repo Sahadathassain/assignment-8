@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Blog = ({blog}) => {
+const Blog = ({blog,handleReadTime}) => {
 
   const{ author_name, blog_title, images, author_image,read_time,publish_date}=blog;
   return (
@@ -26,7 +26,7 @@ const Blog = ({blog}) => {
         </div>
         <h2 className="md:text-2xl mx-6 text-xl font-bold">{blog_title}</h2>
         <button
-          
+          onClick={()=>handleReadTime(blog)}
           className="btn ms-2 btn-active btn-link">
           Mark as read
         </button>
